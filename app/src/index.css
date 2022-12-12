@@ -3,3 +3,94 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.card-img-container {
+  height: calc(100vh - 375px);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: 175px;
+}
+
+
+
+.card-back {
+  position: relative;
+  left: 100px;
+}
+
+.form-container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  left: 350px;
+  max-width: 400px;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  width: 100%;
+  height: 90px;
+}
+
+
+
+
+.exp-cvc-container {
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+
+
+.card-exp {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-exp input {
+  margin-right: 10px;
+}
+
+.card-exp div {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-exp div input {
+  width: 100%;
+}
+
+.cvc {
+  margin-left: 10px;
+}
+
+input {
+  height: 40px;
+  margin: 5px 0;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+}
+

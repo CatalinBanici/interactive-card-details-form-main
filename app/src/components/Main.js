@@ -7,9 +7,11 @@ import '../index.css';
 export default function Main() {
   return (
     <header className='header-container'>
-      <img className='main-image' src={MainDesktop} alt='main' />
-      <img className='card-front' src={CardFront} alt='front card' />
-      <img className='card-back' src={CardBack} alt='back card' />
+        <img className='main-image' src={MainDesktop} alt='main' />
+        <div className='card-img-container'>
+            <img className='card-front' src={CardFront} alt='front card' />
+            <img className='card-back' src={CardBack} alt='back card' />   
+        </div>
     </header>
   )
 }
