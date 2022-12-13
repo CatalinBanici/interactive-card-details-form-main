@@ -4,41 +4,65 @@
   padding: 0;
 }
 
-main {
-  display: flex;
-  height: 100vh;
+
+
+body {
+  width: 1440px;
+  
 }
 
-.header-container {
+main {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+/* main container */
+
+.header-container {
+  height: 100vh;
+  width: 725px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .card-img-container {
-  height: calc(100vh - 375px);
   position: absolute;
+  height: 525px;
+  width: 525px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  left: 175px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-
+.main-image {
+  align-self: flex-start;
+}
 
 .card-back {
-  position: relative;
-  left: 100px;
+  align-self: flex-end;
+  
 }
+ 
+/* form container */
 
 .form-container {
   position: relative;
   display: inline-flex;
   flex-direction: column;
-  left: 350px;
+  
   max-width: 400px;
   justify-content: center;
   align-items: flex-start;
+  margin: 75px;
+
   
 }
 
