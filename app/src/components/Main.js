@@ -4,7 +4,10 @@ import CardFront from '../assets/images/bg-card-front.png';
 import CardBack from '../assets/images/bg-card-back.png';
 import '../index.css';
 
-export default function Main() {
+export default function Main(props) {
+
+
+
   return (
     <header className='header-container'>
         <img className='main-image' src={MainDesktop} alt='main' />

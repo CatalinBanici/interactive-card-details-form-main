@@ -14,7 +14,7 @@ export default function Form(props) {
 
       <label className='card-number label'>
         CARD NUMBER
-        <input type='text' name='card-number' onChange={handleChange} />
+        <input type='text' name='card-number' onChange={handleChange}  />
         {/* <p>Wrong format, numbers only!</p> */}
       </label>
       

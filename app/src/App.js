@@ -4,12 +4,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [inputValues, setInputValues] = useState({
-    cardholderName: '',
-    cardNumber: '',
-    expDate: '',
-    cvc: ''
-  });
+  const [inputValues, setInputValues] = useState('');
 
   function handleChange(e) {
     setInputValues({...inputValues, [e.target.name]: e.target.value});
@@ -20,11 +15,13 @@ function App() {
   }
 
   console.log(inputValues)
+  
 
   return (
     <main>
-      <Main />
-      <Form handleChange={handleChange} handleSubmit={handleSubmit} />
+      <Main inputValues={inputValues} />
+      <Form handleChange={handleChange} handleSubmit={handleSubmit}  />
+      <span></span>
     </main>
     
   );
