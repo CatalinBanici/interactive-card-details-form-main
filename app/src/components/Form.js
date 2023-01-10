@@ -1,17 +1,20 @@
 import React from 'react';
 import '../index.css';
 
-export default function Form() {
+export default function Form(props) {
+
+  const {handleChange, handleSubmit} = props;
+
   return (
-    <form className='form-container'>
+    <form className='form-container' onSubmit={handleSubmit} >
       <label className='cardholder-name label'>
         CARDHOLDER NAME
-        <input type='text' name='card-name' />
+        <input type='text' name='card-name' onChange={handleChange} />
       </label>
 
       <label className='card-number label'>
         CARD NUMBER
-        <input type='text' name='card-number' />
+        <input type='text' name='card-number' onChange={handleChange} />
         {/* <p>Wrong format, numbers only!</p> */}
       </label>
       
@@ -19,15 +22,15 @@ export default function Form() {
         <label className='card-exp label'>
             EXP. DATE (MM/YY)
             <div>
-                <input type='text' name='month-expiration' />
-                <input type='text' name='year-expiration' />
+                <input type='text' name='month-expiration' onChange={handleChange} />
+                <input type='text' name='year-expiration' onChange={handleChange} />
             </div>
             {/* <p>Can't be blank!</p> */}
         </label>
         
         <label className='cvc label'>
             CVC
-            <input type='text' name='cvc' />
+            <input type='text' name='cvc' onChange={handleChange} />
             {/* <p>Can't be blank!</p> */}
         </label>       
       </div>
