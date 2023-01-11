@@ -21,7 +21,7 @@ function App() {
     <main>
       <Main inputValues={inputValues} />
       <Form handleChange={handleChange} handleSubmit={handleSubmit}  />
-      <span></span>
+      <span>{}</span>
     </main>
     
   );

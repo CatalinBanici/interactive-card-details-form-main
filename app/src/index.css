@@ -74,6 +74,18 @@ main {
   height: 90px;
 }
 
+.error-message {
+  display: none;
+}
+
+.error-message-wrong {
+  display: none;
+}
+
+input:invalid ~ .error-message {
+  display: block;
+}
+
 
 
 
@@ -101,6 +113,10 @@ main {
 
 .card-exp div input {
   width: 100%;
+}
+
+.card-exp div span {
+  float: inline-end;
 }
 
 .cvc {
